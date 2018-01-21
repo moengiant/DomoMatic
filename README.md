@@ -8,10 +8,10 @@ Python modules: sys, datetime, pychromecast, smtplib, email and requests
 The schedule.py script reads in data from a schedule.txt file located in the /scripts/python directory.  
 The schedule file is set up with each line containing the information for a timed event with the information formated as follows:
 
-<spen style="color:blue;">time|title|function|param1|param2|param3</span>
+time|title|function|param1|param2|param3
 
 
-time - is the time of the event formated as YYYY-MM-DD HH:MM
+time - is the time of the event formated as YYYY-MM-DD HH:MM. To create a daily event format time as DAY HH:MM - DAY 12:00 
 title - is the title of the event
 function - currently there are only three functions - birthday, send_text and timed_device
 
@@ -28,10 +28,10 @@ To get this up and running:
 3) Create a birthday songs directory in the www/media directory
 4) Copy birthday songs into the birthday songs directory
 5) Rename songs 1.mp2, 2.mp3 and so on untill all song names are a number
-6) Edit the second number in the randint function to match the number of mp3 files you have in your www/media/birthday songs directory  
-7) Edit the fromaddr to the desire from email address
-8) Edit line 60 to reflect your smtp sever and port
-9) Edit line 62 to reflect your user and password information used to connect to your smtp server
+6) Edit the second number in the randint function on line 30 to match the number of mp3 files you have in your www/media/birthday songs directory  
+7) Edit the fromaddr on line 50 to the desired from email address
+8) Edit line 61 to reflect your smtp sever and port
+9) Edit line 63 to reflect your user and password information used to connect to your smtp server
 10) Modify the schedule.txt file as desire - each line needs 5 pipe characters - "|" - regardless of the function being called  
 
 More functions can easily be added by creating more def's 
