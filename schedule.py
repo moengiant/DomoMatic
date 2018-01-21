@@ -16,7 +16,7 @@ time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 print (time)
 
 # Path to schedule file
-file = 'schedule.txt'
+file = 'schedule.txt' # This needs to be the full path to the file - for Windows 10 'C:\Program files (x86)\Domoticz\scripts\python\schedule.txt'
 
 # Funtions section
 
