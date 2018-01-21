@@ -13,6 +13,7 @@ URL_DOMOTICZ = 'http://127.0.0.1:8080/'
 
 # Grab current time
 time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+todate = datetime.datetime.now().strftime("%Y-%m-%d")
 print (time)
 
 # Path to schedule file
@@ -88,6 +89,14 @@ with open(file) as s:
 		param1 = stuff[3]
 		param2 = stuff[4]
 		param3 = stuff[5]
+
+		#check to see if even is daily
+		if "DAY" in event_time:
+			#print("Daily Event: " + event_time)
+			hhmm = event_time[-6:]
+			#print(hhmm)
+			event_time = todate + hhmm
+			#print(event_time)
 	
 		if event_time == time:
 			f=triggered_function

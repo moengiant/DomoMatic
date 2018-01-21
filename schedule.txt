@@ -2,4 +2,4 @@ time|title|function|param1|param2|param3
 2018-01-20 13:30|Paige's Birthday|birthday|Kitchen speaker|media/birthday songs|
 TEST|Paige's Birthday|birthday|Kitchen speaker|media/birthday songs/|
 TEST|Birthday text message|send_text|mailbox@domain.com|Happy Birthday|Happy Birthday and have a great day
-TEST|Turn on office light|timed_device|27|On|
+DAY 12:00|Turn on office light|timed_device|27|On|
