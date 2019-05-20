@@ -38,4 +38,4 @@ More functions can easily be added by creating more def's
 
 As well for testing purposes there is a testing parameter that can be used to bypass the time = use 'TEST' in the time field.   
 
-Running on Windows 10 | Domoticz Version: 3.8153 | Nest/z-wave/milights/Kodi/LMS/Google Home
+Running on Windows 10 | Domoticz Version: 4.97 | Controlicz/Google Home/Kodi/LMS/Milights/Nest/Yeelights/z-wave
